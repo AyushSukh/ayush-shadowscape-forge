@@ -39,20 +39,20 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background/80" />
       
-      {/* Matrix Rain Effect */}
-      <div className="matrix-bg" />
+      {/* Elegant Live Background */}
+      <div className="elegant-bg" />
       
-      {/* Floating Particles */}
+      {/* Elegant Floating Elements */}
       <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(12)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-primary rounded-full opacity-60 animate-pulse"
+            className="absolute w-2 h-2 bg-primary/30 rounded-full opacity-40 animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
+              animationDelay: `${Math.random() * 4}s`,
+              animationDuration: `${3 + Math.random() * 3}s`
             }}
           />
         ))}
@@ -65,7 +65,7 @@ const Hero = () => {
           <h1 className="text-6xl md:text-8xl font-orbitron font-black mb-4">
             <span className="text-foreground">AYUSH</span>
             <br />
-            <span className="neon-text pulse-neon">SUKHWAL</span>
+            <span className="elegant-text pulse-elegant">SUKHWAL</span>
           </h1>
           <div className="w-32 h-1 bg-gradient-primary mx-auto mb-6" />
         </div>
@@ -93,7 +93,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 slide-up" style={{ animationDelay: '0.9s' }}>
           <Button 
             size="lg" 
-            className="glass neon-border hover-glow font-orbitron px-8 py-4 text-lg group"
+            className="glass luxury-border hover-glow font-orbitron px-8 py-4 text-lg group"
           >
             VIEW MY WORK
             <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />

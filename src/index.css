@@ -7,55 +7,55 @@
 
 @layer base {
   :root {
-    /* Core Dark Palette */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Elegant Dark Palette */
+    --background: 220 15% 8%;
+    --foreground: 220 10% 96%;
     
-    /* Glass Surfaces */
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 5% 6%;
-    --popover-foreground: 0 0% 98%;
+    /* Luxury Surfaces */
+    --card: 220 15% 8%;
+    --card-foreground: 220 10% 96%;
+    --popover: 220 12% 10%;
+    --popover-foreground: 220 10% 96%;
     
-    /* Neon Accents */
-    --primary: 270 100% 65%;
-    --primary-foreground: 0 0% 0%;
-    --primary-glow: 270 100% 75%;
+    /* Sophisticated Gold */
+    --primary: 45 85% 75%;
+    --primary-foreground: 220 15% 8%;
+    --primary-glow: 45 90% 85%;
     
-    /* Electric Blue */
-    --secondary: 195 100% 60%;
-    --secondary-foreground: 0 0% 0%;
-    --secondary-glow: 195 100% 70%;
+    /* Elegant Silver */
+    --secondary: 210 15% 75%;
+    --secondary-foreground: 220 15% 8%;
+    --secondary-glow: 210 20% 85%;
     
-    /* Cyber Purple */
-    --accent: 280 90% 60%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 280 90% 70%;
+    /* Deep Burgundy */
+    --accent: 345 80% 65%;
+    --accent-foreground: 220 10% 96%;
+    --accent-glow: 345 85% 75%;
     
     /* Surfaces & Borders */
-    --muted: 240 10% 12%;
-    --muted-foreground: 240 5% 65%;
-    --border: 240 10% 15%;
-    --input: 240 10% 8%;
-    --ring: 270 100% 65%;
+    --muted: 220 12% 18%;
+    --muted-foreground: 220 8% 70%;
+    --border: 220 12% 22%;
+    --input: 220 15% 12%;
+    --ring: 45 85% 75%;
     
     /* Destructive */
     --destructive: 0 75% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 220 10% 96%;
     
-    /* Glass Effects */
-    --glass-bg: 240 10% 8%;
-    --glass-border: 240 10% 20%;
+    /* Elegant Glass Effects */
+    --glass-bg: 220 15% 10%;
+    --glass-border: 220 12% 25%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(270 100% 65%) 0%, hsl(195 100% 60%) 100%);
-    --gradient-dark: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(240 15% 8%) 100%);
-    --gradient-glow: radial-gradient(circle at center, hsl(270 100% 65% / 0.3) 0%, transparent 70%);
+    /* Luxury Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 85% 75%) 0%, hsl(210 15% 75%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(220 12% 12%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(45 85% 75% / 0.15) 0%, transparent 70%);
     
-    /* Shadows & Glows */
-    --shadow-neon: 0 0 20px hsl(270 100% 65% / 0.5);
-    --shadow-cyber: 0 0 30px hsl(195 100% 60% / 0.4);
-    --shadow-glass: 0 8px 32px hsl(240 10% 3.9% / 0.5);
+    /* Sophisticated Shadows */
+    --shadow-elegant: 0 0 30px hsl(45 85% 75% / 0.3);
+    --shadow-luxury: 0 0 40px hsl(210 15% 75% / 0.2);
+    --shadow-glass: 0 8px 32px hsl(220 15% 8% / 0.6);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -157,19 +157,19 @@
     @apply backdrop-blur-2xl bg-glass-bg/60 border border-glass-border/70;
   }
   
-  /* Neon Effects */
-  .neon-text {
+  /* Elegant Effects */
+  .elegant-text {
     @apply text-primary;
-    text-shadow: 0 0 10px hsl(var(--primary) / 0.8);
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.4);
   }
   
-  .neon-border {
-    @apply border border-primary;
-    box-shadow: 0 0 15px hsl(var(--primary) / 0.5), inset 0 0 15px hsl(var(--primary) / 0.1);
+  .luxury-border {
+    @apply border border-primary/30;
+    box-shadow: 0 0 25px hsl(var(--primary) / 0.2), inset 0 0 20px hsl(var(--primary) / 0.05);
   }
   
-  .cyber-glow {
-    @apply shadow-[0_0_30px_hsl(var(--primary)/0.3)];
+  .sophisticated-glow {
+    @apply shadow-[0_0_40px_hsl(var(--primary)/0.2)];
   }
   
   /* Gradient Backgrounds */
@@ -186,8 +186,8 @@
     animation: float 6s ease-in-out infinite;
   }
   
-  .pulse-neon {
-    animation: pulse-neon 2s ease-in-out infinite alternate;
+  .pulse-elegant {
+    animation: pulse-elegant 3s ease-in-out infinite alternate;
   }
   
   .slide-up {
@@ -204,7 +204,7 @@
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.6);
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.3);
   }
 }
 
@@ -242,9 +242,9 @@
   50% { transform: translateY(-20px); }
 }
 
-@keyframes pulse-neon {
-  0% { text-shadow: 0 0 5px hsl(var(--primary) / 0.8); }
-  100% { text-shadow: 0 0 20px hsl(var(--primary) / 1), 0 0 30px hsl(var(--primary) / 0.8); }
+@keyframes pulse-elegant {
+  0% { text-shadow: 0 0 10px hsl(var(--primary) / 0.3); }
+  100% { text-shadow: 0 0 30px hsl(var(--primary) / 0.6), 0 0 50px hsl(var(--primary) / 0.3); }
 }
 
 @keyframes slide-up {
@@ -258,8 +258,8 @@
   }
 }
 
-/* Matrix Rain Effect */
-.matrix-bg {
+/* Elegant Live Background Effect */
+.elegant-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -267,5 +267,24 @@
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  background: radial-gradient(ellipse at center, hsl(var(--primary) / 0.05) 0%, transparent 70%);
+  background: 
+    radial-gradient(circle at 20% 80%, hsl(var(--primary) / 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, hsl(var(--secondary) / 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, hsl(var(--accent) / 0.04) 0%, transparent 50%);
+  animation: elegant-flow 20s ease-in-out infinite;
+}
+
+@keyframes elegant-flow {
+  0%, 100% { 
+    background: 
+      radial-gradient(circle at 20% 80%, hsl(var(--primary) / 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--secondary) / 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(var(--accent) / 0.04) 0%, transparent 50%);
+  }
+  50% { 
+    background: 
+      radial-gradient(circle at 80% 20%, hsl(var(--primary) / 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, hsl(var(--secondary) / 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 60% 60%, hsl(var(--accent) / 0.04) 0%, transparent 50%);
+  }
 }
